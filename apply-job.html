@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply for Job - Online Job Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 420px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #28a745;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1e7e34;
+        }
+        .back {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .back a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Apply for Job</h2>
+
+    <!-- Job Details Section -->
+    <p><strong>Job Title:</strong> Software Developer</p>
+    <p><strong>Company:</strong> ABC Tech Pvt Ltd</p>
+    <p><strong>Location:</strong> Mumbai</p>
+
+    <form action="ApplyJobServlet" method="post">
+
+        <input type="hidden" name="jobId" value="101">
+
+        <input type="text" name="fullname" placeholder="Your Full Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Write your cover letter..." required></textarea>
+
+        <button type="submit">Submit Application</button>
+
+        <div class="back">
+            <a href="browse-jobs.html">← Back to Jobs</a>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
