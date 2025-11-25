@@ -1,7 +1,3 @@
-* ==============================
-   1. MySQL DATABASE & TABLES
-   ==============================
-
 CREATE DATABASE job_portal;
 
 CREATE TABLE users (
