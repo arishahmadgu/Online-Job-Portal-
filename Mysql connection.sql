@@ -35,4 +35,4 @@ CREATE TABLE applications (
     FOREIGN KEY (job_id) REFERENCES jobs(id)
 );
 
-*/
+
