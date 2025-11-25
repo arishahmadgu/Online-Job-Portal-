@@ -29,7 +29,7 @@ database/ (SQL file)
 3. Update DB credentials in `db_connection.java`.  
 4. Run the project on Tomcat server.  
 
-#Usage
+##Usage
 1. Start Tomcat server.
 2. Open browser and go to:
 3.Create an account or login.
